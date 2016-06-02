@@ -25,7 +25,7 @@ namespace WindowsFormsApplication1
         {
 
         }
-
+        //contador de generaciones
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             t.next();
@@ -39,28 +39,28 @@ namespace WindowsFormsApplication1
         {
             t.Dibuja(this);
         }
-
+        //Reinicio
         private void button1_Click(object sender, EventArgs e)
         {
             t = new Tablero(20);
             c = 0;
             textBox1.Text = c.ToString();
         }
-
+        //El tamaño de la celda cambia a 10x10
         private void x10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             t = new Tablero(10);
             c = 0;
             textBox1.Text = c.ToString();
         }
-
+        //El tamaño de la celda cambia a 15x15
         private void x15ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             t = new Tablero(15);
             c = 0;
             textBox1.Text = c.ToString();
         }
-
+        //El tamaño de la celda cambia a 20x20
         private void x20ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             t = new Tablero(20);
