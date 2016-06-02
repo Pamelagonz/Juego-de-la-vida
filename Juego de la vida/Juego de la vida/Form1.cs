@@ -66,20 +66,6 @@ namespace WindowsFormsApplication1
             t = new Tablero(20);
             c = 0;
             textBox1.Text = c.ToString();
-        }
-
-        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form2 frm = new Form2();
-            frm.Show();
-        }
-        // Create Form2.
-        public class Form2 : Form
-        {
-            public Form2()
-            {
-                Text = "Form2";
-            }
-        }   
+        } 
     }
 }
