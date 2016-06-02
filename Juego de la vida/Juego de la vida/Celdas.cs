@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
 
         public Celdas(int x, int y, Random r)
         {   
-            // Inicializa el estado de las celdas y la cantidad de celdas
+            // Inicializa el estado de las celdas y la cantidad de celdas vivas
             double d =  r.NextDouble();
             if (d < .50)
                 estado_actual = Estado.muerta;
@@ -72,6 +72,7 @@ namespace WindowsFormsApplication1
             for (int i = 0; i < tamaño; i++)
                 for (int j = 0; j < tamaño; j++)
                 {
+                    //Dibuja la celda
                     tablero[i][j].Dibuja(f);
                 }
         }
